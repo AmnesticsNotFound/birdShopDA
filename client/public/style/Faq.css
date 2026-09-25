@@ -1,0 +1,30 @@
+#faqBody {
+    width:95vw;
+    margin-left:3vw;
+    flex-direction: column;
+    height:fit-content;
+    color:rgb(0, 0, 0);
+    font-size: 3vw;
+}
+
+#hard2read {
+    
+}
+#email, #phone {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+}
+
+.question {
+    font-size:min(1.5vw, 50px);
+    font-style:italic;
+    text-indent: 1vw;
+}
+
+.indent {
+    text-indent: 2vw;
+    font-size:min(1vw, 30px);
+    margin-left:min(2vw, 40px);
+
+}

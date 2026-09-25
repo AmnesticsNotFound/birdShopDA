@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+#shell {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width:2560px;
+  height:91.1vh;
+  margin:0px;
+  padding:0px;
+
+}
+#mainHome {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    max-width:2500px;
+    gap:0vh;
+    margin:0px;
+  }
+  
+  .homepageStyle {
+    font-family: copper;
+    
+    
+  }
+  
+  #imgBanner {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #intro {
+    font-size: 161%;
+    background-color:rgb(255, 255, 255);
+    border-style:solid;
+    padding:1%;
+    border-width:5px;
+    border-radius:6px;
+    width:100vw;
+    max-height:500px;
+    max-width:1201px;
+    line-height:1.15;
+  }
+  #contactDiv {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:1vh;
+    
+   
+  }
+  #contactDiv h2{
+    background-color: aliceblue;
+    margin:0px;
+    border-radius: 3px;
+    border-bottom-style: solid;
+  }
+  #contactInfo {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 3px;
+    
+    
+  }
+  h3 span {
+    font-weight: normal;
+  }
+
+  #bannerImg {
+    width:500px;
+  }
+  #mainImg {
+    width:40vw;
+    max-width:1000px;
+    aspect-Ratio:32/9;
+    border-radius:5px;
+    border-style:solid;
+    border-width:5px;
+  }
+  #leftBird{
+    width:15vw; 
+    transform:scaleX(-1);
+  }
+  #rightBird{
+    width:15vw; 
+    
+  }
+
+    @media only screen and (min-aspect-ratio:.61), (min-width:1441px){
+      #mainHome {
+        
+      }
+      
+
+    }
+  @media only screen and (max-aspect-ratio:.6), (max-width:1200px){
+    #shell {
+      height:max-content;
+      width:100vw;
+    }
+    #mainHome {
+      gap:1vh;
+      max-width:100vw;
+    }
+    #homeTitle {
+      font-size:6.5vw;
+    }
+    
+    #imgBanner {
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+    }
+    #mainImg {
+      width:98%; 
+      aspect-Ratio:4/3;
+      max-width: none;
+      border-radius:5px;
+    }
+    #intro {
+      font-size:5vw;
+      width:90vw;
+      max-height:max-content;
+    }
+    #leftBird{
+      width:20vw; 
+      transform:scaleX(-1);
+      display:none;
+    }
+    #rightBird{
+      width:20vw; 
+      display:none;
+    }
+
+    #contactDiv {
+      font-size: 1em;
+      width:70vw;
+    }
+
+    #contactDiv h2 {
+      font-size: 5vw;
+    }
+
+    #contactInfo {
+      flex-direction: column;
+      width:100%;
+    }
+    #contactInfo h3{
+      font-size: 4vw;
+    }
+    
+  }

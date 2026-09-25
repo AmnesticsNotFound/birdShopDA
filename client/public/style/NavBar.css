@@ -1,0 +1,158 @@
+
+a:link { 
+    text-decoration: none;
+    color:black;
+  } 
+  a:visited { 
+    text-decoration: none;
+    color:black;
+  } 
+  a:hover { 
+    text-decoration: none; 
+    color:black;
+  } 
+  a:active { 
+    text-decoration: none; 
+    color:black;
+  }
+  
+.navBar {
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height:8vh;
+    min-height:100px;
+    background-color: #0A2342;
+    margin:0px;
+    width:100vw;
+   
+    
+}
+
+
+  #logo:hover {
+    filter: drop-shadow(0 0 2em #ffffff);
+  }
+  #logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  #leftSection {
+    display:flex;
+    align-items: center;
+    gap:1vw;
+    
+  }
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+
+  @keyframes logo-scale {
+    from {
+      transform:scale(0.7);
+    }
+    to {
+      transform:scale(1);
+    }
+  }
+
+
+    .shopLink:hover {
+      animation: logo-scale infinite .5s alternate-reverse;
+      
+    }
+  
+  .shopLink {
+      aspect-ratio:32/9;
+      width:fit-content;
+      max-width:100px;
+      min-width:50px;
+      font-size:110%;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-radius:6px;
+      padding:15px;
+      background-color:rgb(255, 255, 255);
+  }
+  
+#logo {
+    width:30vw;
+    height:8vh;
+    min-width:200px;
+    max-width:300px;
+    min-height:100px;
+   
+    
+}
+.cart {
+    display:flex;
+    align-items:center;
+    margin-right:1vw;
+}
+
+#cartImg {
+  width:4vh;
+  aspect-ratio:1;
+  min-width:40px;
+  max-width:80px;
+}
+
+.cartCount {
+    background-color: rgb(245, 199, 15);
+    border-radius: 15px;
+    width:min(1.5vw, 3rem);
+    aspect-ratio: 4/3;
+    font-size:min(1vw,1.5rem);
+    text-align:center;
+    align-content:center;
+    
+
+    
+}
+
+@media only screen and (max-aspect-ratio:.6), (max-width:1200px){
+  .navBar {
+    justify-content:initial;
+    overflow-x:scroll;
+    
+  }
+
+  #leftSection {
+    width:fit-content;
+  }
+
+  
+   #logo{
+    width:40vw;
+    max-width: none;
+  }
+  .shopLink {
+    max-width: none;
+    width:12vw;
+    aspect-ratio: 5/4;
+    font-size: 3vw;
+    align-content: center;
+    
+}
+
+  #cartImg {
+    width:8vw;
+    max-width: none;
+  }
+  .cartCount {
+    border-radius: 150px;
+    font-size:4vw;
+    width:5vw;
+    height: auto;
+    aspect-ratio: 1;
+   
+    
+  }
+}

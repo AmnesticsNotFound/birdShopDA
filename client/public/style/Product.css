@@ -1,0 +1,273 @@
+@import "tailwindcss";
+#product {
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:5vh;
+    width:100vw;
+    height:80vh;
+    
+}
+
+
+
+
+
+#titleDiv {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    height: fit-content;
+    width:fit-content;
+}
+
+
+#imgGroup {
+    
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    max-width:1000px;
+    min-width:500px;
+    aspect-ratio: 4/3;
+    border-style:double;
+    border-color:black;
+    border-width:12px;
+    border-radius: 5px;
+}
+.smallerImgs {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-style:double;
+    border-color:black;
+    border-width:12px;
+    border-radius: 5px;
+    width:100%;
+    height:50%;
+}
+
+.smallerImgs img {
+    width:100%;
+    
+    aspect-ratio: 4/3;
+}
+
+#bigImg {
+    /*border-style:groove;
+    border-color:rgb(128, 0, 0) green blue rgb(212, 79, 235);
+    border-width:20px;*/
+    
+    width:100%;
+    
+    aspect-ratio: 21/9.5;
+}
+
+
+
+
+.cartElem {
+    display:flex;
+    align-items:center;
+    gap:1vw;
+    width:fit-content;
+}
+
+
+
+#cartInputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#mobileTitle {
+    display:none;
+}
+
+
+
+
+#tooLarge{
+    display:block;
+}
+
+#tooSmall{
+    display:block;
+}
+
+input {
+    text-align: center;
+}
+
+#submitProd {
+    animation: logo-scale infinite 1s alternate-reverse;
+    cursor: pointer;
+    
+  }
+
+  
+
+  #productTitle {
+    font-family: copper;
+    color:rgb(160, 110, 44);
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    margin-top:0px;
+    font-size:2rem;
+    
+}
+
+  #productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    width:fit-content;
+    max-width:min(50vw,960px);
+    font-size: 1.3rem;
+    
+
+    
+}
+
+
+
+  @media only screen and (min-aspect-ratio:1) and (max-width:1899px){
+
+    #productInfo p {
+        
+    }
+
+    #productTitle {
+        font-size: 2em;
+    }
+  }
+
+
+
+  @media only screen and (min-aspect-ratio:1) and (min-width:1900px){
+
+    #productTitle {
+        
+        
+        
+    }
+
+  }
+@media (max-aspect-ratio:.6), (max-width:1200px){
+
+    #product {
+       height:fit-content;
+        margin-top: 1vh;
+    }
+    .productBody {
+        margin-top:0px;
+        flex-direction: column;
+        font-size:20px;
+        width:100%;
+        
+    }
+    
+    #mobileTitle {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: copper;
+        color:rgb(160, 110, 44);
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+        font-size:6vw;
+    }
+
+    #imgGroup {
+       width:85vw;
+       max-width: fit-content;
+       min-width: 0px;
+    }
+
+    .smallerImgs {
+        width:100%;
+        padding:0px;
+        display:flex;
+        
+    }
+
+    .smallerImgs img{
+        width:50%;
+        
+    }
+    
+    #bigImg {
+        width:100%;
+    }
+
+    #titleDiv {
+        width:100%;
+        margin:0px;
+        margin-bottom:5vh;
+        height:45%;
+        font-size:100%;
+    }
+
+    #productTitle {
+        font-family: copper;
+        color:rgb(160, 110, 44);
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+        visibility: hidden;
+    }
+
+    #productInfo {
+        width:100%;
+        font-size:100%;
+    }
+
+    #productInfo p{
+        width:80%;
+        font-size:4.5vw;
+        padding:2%;
+        aspect-ratio: 16/9;
+       
+        
+    }
+
+
+    #productInfo  h1{
+       
+        font-size:6vw;
+    }
+
+    #quantity {
+        
+        
+        
+    }
+
+    .cartElem button {
+        
+        min-height:0px;
+        min-width:80px;
+        max-width:none;
+        font-size:1.5vh;
+        aspect-ratio: 16/9;
+        background-color:rgb(146, 255, 95);
+        width:20vw;
+        border-radius: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-aspect-ratio:.8) and (max-width:400px){
+
+
+    .cartElem button {
+        font-size:100%;
+    }
+
+}
