@@ -1,0 +1,190 @@
+#reviewBody {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-width:300px;
+    height:91.9vh;
+    width:100vw;
+    /*background-image: linear-gradient(rgb(252, 234, 155), rgb(255, 255, 255));*/
+    background: linear-gradient(180deg, rgb(255, 255, 255) 14%, rgba(255,255,255,1) 75%);
+}
+
+#testimonialTitle{
+    font-family: copper;
+    color:rgb(0, 0, 0);
+    
+    
+}
+#reviews {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:1080px;
+    
+}
+
+#description {
+    height:10vh;
+    width:15vw;
+}
+
+.star {
+    aspect-ratio: 1;
+    width:2vw;
+    max-width:50px;
+    min-width:20px;
+    background-color: rgba(255, 255, 0, 0);
+}
+
+
+/*Review Creator*/
+#createRev {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: copper;
+    color:rgb(159, 106, 9);
+    width:30vw;
+    max-width:300px;
+    min-width:150px;
+    margin:0px 8%;
+}
+#createRev h1{
+    width:fit-content;
+    padding:0px;
+    margin: 0px;
+    color:rgb(159, 106, 9);
+}
+#errorMsg {
+    color:rgb(251, 0, 0);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea {
+    width:100%;
+    aspect-ratio: 21/9;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 150%;
+}
+
+
+form input[type=submit]{
+    width:15%;
+    min-width:75px;
+    aspect-ratio: 21/9;
+    border-radius:6px;
+    background-color:rgba(193, 250, 255, 0.638);
+}
+.newRevStars {
+    aspect-ratio: 1;
+    width:2vw;
+    max-width:50px;
+    min-width:20px;
+}
+
+@media only screen and (max-aspect-ratio:.6), (max-width:1200px){
+    #reviewBody {
+        height:max-content;
+        background-image: none;
+    }
+
+    #testimonialTitle {
+    font-size: 5vw;
+    }
+
+    #reviews {
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-self: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap:1%;
+        width:100%
+    }
+    
+    #createRev {
+        width:96vw;
+        order:1;
+        max-width: 100%;
+        min-width:300px;
+        margin:0px;
+        padding:0px;
+    }
+
+    #createRev h1 {
+        font-size:4vw;
+    }
+
+    form {
+        width:100%;
+    }
+
+    textarea {
+        font-size:5vw;
+    }
+
+    input[type=text] {
+        width:35%;
+        aspect-ratio: 32/9;
+        font-size: 5vw;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10px;
+   
+    
+    }
+    
+    #submitButton {
+        width:15%;
+        font-size: 3vw;
+    }
+
+    .newRevStars {
+        aspect-ratio: 1;
+        width:7vw;
+        max-width:none;
+        min-width:0;
+    }
+
+    .reviewDiv {
+        display:flex;
+        flex-direction:column;
+        width:90%;
+        max-width:none;
+        font-size: 120%;
+        justify-content: center;
+        
+        
+    }
+    .reviewDiv p {
+        font-size:5vw;
+    }
+
+    .reviewDiv h1 {
+        font-size:5vw;
+    }
+
+
+    
+     .star {
+        width:7vw;
+        max-width:none;
+        min-width:0;
+    }
+
+    
+    
+    
+}
+

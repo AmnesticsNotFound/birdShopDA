@@ -1,0 +1,38 @@
+
+
+
+/*For when screen is large enough to accomodate bigger font
+@media only screen and (min-width:1920px){
+    .card h2{
+        font-size:200%;
+    }
+}
+For mobile devices
+@media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+
+    #cards {
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:1vh;
+    }
+    .card {
+        font-size: 2vw;
+        
+    
+    }
+    .card img {
+        aspect-ratio:4/3;
+        width:100%;
+        min-width:100px;
+        max-width:400px;
+        height:80%;
+        min-height:100px;
+        max-height:300px;
+        
+    }
+
+    .card h2, .card h3 {
+        font-size: 200%;
+    }
+
+}
