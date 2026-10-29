@@ -444,7 +444,7 @@ app.post("/updateCart", limiter, async (req,res,next) => {
       //user.cart.pull({ product: req.body.productID });
       console.log("DELETION INBOUND");
       
-      user.cart = user.cart.filter(elem => (elem.product._id != item.product._id)  || (item.size != elem.size));
+      user.cart = user.cart.filter(elem => (elem.product._id != item.product._id) && (item.size != elem.size));
   
   // Save the changes to the database
   if(req.session.user.email != "guest") {
